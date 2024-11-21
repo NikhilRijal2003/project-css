@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dune by Frank Herbert</title>
+    <!-- Including Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Orbitron Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Dune Chronicles</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Overview</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Purchase</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="text-center bg-primary text-light py-5">
+        <h1 class="display-4" style="font-family: 'Orbitron', sans-serif;">DUNE</h1>
+        <p class="lead">A Novel by Frank Herbert</p>
+        <img src="image/9780593099322.jpeg" alt="Dune Cover" class="img-fluid rounded shadow">
+    </header>
+
+    <!-- Content Section -->
+    <main class="container py-5">
+        <div class="row g-4">
+            <!-- Book Summary -->
+            <div class="col-md-6">
+                <h2>About the Book</h2>
+                <p>
+                    Set on the desert world of Arrakis, <em>Dune</em> follows the journey of Paul Atreides 
+                    as he is swept into a whirlwind of interstellar politics and the quest for control of 
+                    the spice melange, the most prized substance in the universe.
+                </p>
+            </div>
+            <!-- Author Information -->
+            <div class="col-md-6 text-center">
+                <img src="image/download.jpeg" alt="Author Frank Herbert" class="img-fluid rounded shadow">
+                <p class="mt-3"><strong>Frank Herbert</strong>, the creative force behind the iconic *Dune* series.</p>
+            </div>
+        </div>
+
+        <!-- Reader Reviews -->
+        <section class="py-5">
+            <h2>Reader Feedback</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p>"A groundbreaking achievement in science fiction."</p>
+                        <footer class="blockquote-footer">Literary Times</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p>"Rich characters and a captivating plot."</p>
+                        <footer class="blockquote-footer">Reader’s Digest</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p>"An unparalleled classic in sci-fi history."</p>
+                        <footer class="blockquote-footer">Galactic Reviews</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Features -->
+        <div class="row g-4">
+            <!-- Grid for Other Works -->
+            <div class="col-md-6">
+                <h2>More from Frank Herbert</h2>
+                <div class="row g-4">
+                    <!-- Dune Messiah -->
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="image/61YU3O2cwbL._AC_UF1000,1000_QL80_.jpg" class="card-img-top" alt="Dune Messiah">
+                            <div class="card-body">
+                                <h5 class="card-title">Dune Messiah</h5>
+                                <p class="card-text">The second book in the *Dune* series, continuing Paul Atreides' journey through a galaxy in turmoil.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Children of Dune -->
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="image/3 image.jpeg" class="card-img-top" alt="Children of Dune">
+                            <div class="card-body">
+                                <h5 class="card-title">Children of Dune</h5>
+                                <p class="card-text">The third book of the *Dune* series, focusing on Paul's children as they navigate their own destinies.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion for Arrakis Details -->
+            <div class="col-md-6">
+                <h2>Discover Arrakis</h2>
+                <div class="accordion" id="arrakisAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#spiceSection">
+                                Spice Melange
+                            </button>
+                        </h2>
+                        <div id="spiceSection" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                The universe's most sought-after resource, granting extended life and expanded consciousness.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fremenSection">
+                                Fremen Society
+                            </button>
+                        </h2>
+                        <div id="fremenSection" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Indigenous people of Arrakis, known for their resilience and cultural depth.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="py-5 text-center">
+            <h2>Order Your Copy Today</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="emailInput" class="form-label">Sign up to purchase:</label>
+                    <input type="email" id="emailInput" class="form-control" placeholder="youremail@example.com">
+                </div>
+                <button type="submit" class="btn btn-primary">Purchase Now</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-3">
+        <p>&copy; 2024 Frank Herbert Literary Estate. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
